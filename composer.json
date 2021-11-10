@@ -1,0 +1,36 @@
+{
+  "name": "slowlyo/tencent-map-selection",
+  "alias": "Dcat腾讯地图选点Form组件",
+  "description": "用于扩展DcatAdmin, 增加腾讯地图选点表单组件",
+  "type": "library",
+  "keywords": [
+    "dcat-admin",
+    "extension",
+    "map"
+  ],
+  "homepage": "https://gitee.com/slowlyo/tencent-map-selection",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Slowlyo",
+      "email": "yguren@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "dcat/laravel-admin": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Slowlyo\\TencentMapSelection\\": "src/"
+    }
+  },
+  "extra": {
+    "dcat-admin": "Slowlyo\\TencentMapSelection\\TencentMapSelectionServiceProvider",
+    "laravel": {
+      "providers": [
+        "Slowlyo\\TencentMapSelection\\TencentMapSelectionServiceProvider"
+      ]
+    }
+  }
+}
