@@ -9,7 +9,7 @@ use Dcat\Admin\Form\Field;
  */
 class TencentMap extends Field
 {
-    protected $view = 'slowlyo.tencent-map-selection::tencent-map';
+    protected $view = 'slowlyo.dcat-tencent-map-selection::tencent-map';
 
     protected static $js = [
         '@extension/slowlyo/tencent-map-selection/js/layui.js',
