@@ -1,5 +1,5 @@
 {
-  "name": "slowlyo/tencent-map-selection",
+  "name": "slowlyo/dcat-tencent-map-selection",
   "alias": "Dcat腾讯地图选点Form组件",
   "description": "用于扩展DcatAdmin, 增加腾讯地图选点表单组件",
   "type": "library",
