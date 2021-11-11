@@ -15,4 +15,6 @@ $form->tencentMap('latlong');
 TENCENT_MAP_API_KEY=你的腾讯地图key
 ```
 
+数据格式为: string lat,long
+
 **记得在:开发工具>扩展 中启用**
