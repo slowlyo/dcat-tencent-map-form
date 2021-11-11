@@ -1,4 +1,7 @@
 <div id="tencent-map-div" class="{{$viewClass['form-group']}}">
+    @php
+        $key = \Slowlyo\TencentMapSelection\TencentMapSelectionServiceProvider::setting('slowlyo-tencent-map-key')
+    @endphp
 
     <label class="{{$viewClass['label']}} control-label">{{$label}}</label>
 
@@ -26,9 +29,9 @@
             </div>
         </div>
 
-        @if(!env('TENCENT_MAP_API_KEY'))
+        @if(!$key)
             <div class="text-danger">
-                &emsp;* 请在 .env 中设置腾讯地图key (TENCENT_MAP_API_KEY)
+                &emsp;* 请在(扩展>设置)中设置腾讯地图key
             </div>
         @endif
 
@@ -37,7 +40,7 @@
     </div>
     <div class="disable-div">
         <iframe id="mapPage" width="100%" height="100%"
-                src="https://apis.map.qq.com/tools/locpicker?search=1&type=1&key={{ env('TENCENT_MAP_API_KEY') }}&referer=myapp">
+                src="https://apis.map.qq.com/tools/locpicker?search=1&type=1&key={{ $key }}&referer=myapp">
         </iframe>
     </div>
 </div>

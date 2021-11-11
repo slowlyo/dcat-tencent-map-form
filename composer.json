@@ -1,5 +1,5 @@
 {
-  "name": "slowlyo/dcat-tencent-map-selection",
+  "name": "slowlyo/tencent-map-selection",
   "alias": "Dcat腾讯地图选点Form组件",
   "description": "用于扩展DcatAdmin, 增加腾讯地图选点表单组件",
   "type": "library",
@@ -18,7 +18,8 @@
   ],
   "require": {
     "php": ">=7.1.0",
-    "dcat/laravel-admin": "~2.0"
+    "dcat/laravel-admin": "~2.0",
+    "monolog/monolog": "1.0.0"
   },
   "autoload": {
     "psr-4": {
