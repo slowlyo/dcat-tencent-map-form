@@ -79,6 +79,10 @@
                     area: ['800px', '500px'],
                     content: $('#mapPage'),
                     btn: ['确认'],
+		    success: function (layero) {
+                        // 处理layer 遮罩在content前
+                        $('.layui-layer-shade').appendTo(layero.parent())
+                    },
                     yes: function () {
                         if (!that.latlng) {
                             layer.msg('未选择坐标')
