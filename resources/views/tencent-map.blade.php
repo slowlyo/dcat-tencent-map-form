@@ -45,10 +45,10 @@
     </div>
 </div>
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui/css/layui.css" />
 <script src="https://www.layuicdn.com/layui/layui.js"></script>
+
 
 <script>
     var vue = new Vue({
@@ -78,7 +78,7 @@
                     area: ['800px', '500px'],
                     content: $('#mapPage'),
                     btn: ['确认'],
-                    success: function (layero) {
+		    success: function (layero) {
                         // 处理layer 遮罩在content前
                         $('.layui-layer-shade').appendTo(layero.parent())
                     },
