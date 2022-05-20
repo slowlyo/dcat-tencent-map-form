@@ -46,10 +46,10 @@
 </div>
 
 {{--引入 Css--}}
-{{ admin_css("static/css/layui.css") }}
+{{ admin_css("@slowlyo.dcat-tencent-map-selection/css/layui.css") }}
 {{--引入 Js--}}
-{{ admin_js("static/js/Vue.js") }}
-{{ admin_js("static/layui.js") }}
+{{ admin_js("@slowlyo.dcat-tencent-map-selection/js/Vue.js") }}
+{{ admin_js("@slowlyo.dcat-tencent-map-selection/layui.js") }}
 
 <script>
     var vue = new Vue({
@@ -79,7 +79,7 @@
                     area: ['800px', '500px'],
                     content: $('#mapPage'),
                     btn: ['确认'],
-		    success: function (layero) {
+                    success: function (layero) {
                         // 处理layer 遮罩在content前
                         $('.layui-layer-shade').appendTo(layero.parent())
                     },
