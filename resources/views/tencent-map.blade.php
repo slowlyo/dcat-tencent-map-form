@@ -45,11 +45,10 @@
     </div>
 </div>
 
-{{--引入 Css--}}
-{{ admin_css("@slowlyo.dcat-tencent-map-selection/css/layui.css") }}
-{{--引入 Js--}}
-{{ admin_js("@slowlyo.dcat-tencent-map-selection/js/Vue.js") }}
-{{ admin_js("@slowlyo.dcat-tencent-map-selection/layui.js") }}
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui/css/layui.css" />
+<script src="https://www.layuicdn.com/layui/layui.js"></script>
 
 <script>
     var vue = new Vue({
